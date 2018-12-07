@@ -1,0 +1,49 @@
+{
+  "name": "lint-eslint-dome",
+  "version": "1.0.0",
+  "description": "ESlint-Dome",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^5.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "fix": "eslint --fix src",
+    "stylelint": "stylelint src/css/*.* --fix"
+  },
+  "keywords": [
+    "azr"
+  ],
+  "author": "Azr",
+  "license": "ISC",
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "color-no-invalid-hex": true,
+      "string-quotes": "single",
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "composes"
+          ]
+        }
+      ],
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ]
+    }
+  }
+}
+
