@@ -1,2 +1,1 @@
-# azr_lint
-ESlint  styleLint
+# 了解ESlint  styleLint
