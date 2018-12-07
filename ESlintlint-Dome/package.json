@@ -1,0 +1,24 @@
+{
+  "name": "lint-eslint-dome",
+  "version": "1.0.0",
+  "description": "ESlint-Dome",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^5.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "fix": "eslint --fix src",
+    "stylelint": "stylelint src/css/*.* --fix"
+  },
+  "keywords": [
+    "azr"
+  ],
+  "author": "Azr",
+  "license": "ISC"
+}
+
